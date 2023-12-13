@@ -1,0 +1,26 @@
+
+.menu-deroulant{
+    position: relative;
+    z-index: 1;
+}
+.menu-deroulant div{
+    background-color:var(--darkest);
+    color: var(--palest);
+
+}
+.menu-deroulant div a{
+    padding: var(--gapSml);
+    font-size: var(--fontStd);
+}
+
+
+@media (min-width: 800px) {   /* Comportement survol quand on est en ecran large */
+    .menu-deroulant:not(:hover) div{
+        pointer-events: none;
+        opacity: 0;
+    }
+    .menu-deroulant div{
+        position: absolute;
+    }
+}
+

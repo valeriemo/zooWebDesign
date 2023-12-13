@@ -1,0 +1,301 @@
+
+.principale{
+    z-index: 2;
+    position: relative;
+    background-color: var(--paler);
+}
+.principale picture{
+    max-width: 180px;
+    display: block;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 3px;
+}
+.principale > nav > div{
+    display: flex;
+}
+.principale a{
+    margin-top: 0;
+    font-size: var(--fontbase);
+    font-weight: bold;
+}
+.principale a:hover{
+    text-decoration: 2px solid underline;
+    text-underline-offset: 5px;
+    text-decoration-color: var(--fluo)
+}
+.principale nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.principale nav a{
+    padding: var(--gapSml);
+}
+
+/*--le logo du menu--*/
+.principale>a:first-of-type{    
+    position: absolute;
+    left: var(--gapMed);
+    top: var(--gapMed);
+    width: 100px;
+}
+/*----*/
+
+/*--la section "Achetez vos billets" du menu--*/
+
+.principale nav>a:last-of-type{ 
+    border-radius: var(--roundedFull);
+    padding: var(--gapMed);
+    font-size:  clamp(1.1rem, 1vw + 1.1rem, 1.641rem);
+    text-align: center;
+    margin-right: 30px;
+    background-color: var(--fluo);
+    color: var(--darkest);
+    line-height: 1.9rem;
+    max-height: fit-content;
+    max-width: 220px;
+    margin-left: var(--gapSml);
+}
+.principale nav>a:last-of-type:hover{
+    background-color:var(--darkest);
+    color: var(--fluo);
+    text-decoration: none;
+}
+/*------------*/
+
+
+/*----MEDIA QUERIES----*/
+
+@media (max-width: 800px) {
+
+    .principale nav{
+        flex-flow: column;
+        align-items: center;
+        background-color: var(--darkest);
+        color: var(--palest);
+        position: fixed;
+        width: 100vw;
+        height: -webkit-fill-available;
+        justify-content: space-around;
+        
+    }
+    .principale nav a{
+        text-align: center;
+        padding: var(--gapMed);
+    }
+    .principale nav div{
+        flex-flow: column;
+    }
+
+    picture{
+        display: none;
+        padding-top: var(--gapMed);
+        width: 80%;
+    }
+    
+    .principale nav>a:last-of-type{
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .principale nav>a:first-of-type{
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+    }
+
+    /*--menu-deroulant--*/
+    .principale nav>div:not(:hover) div{
+        opacity: 100%;
+    }
+    .principale nav>div>div{
+        position: static;
+    }
+    .principale nav>div>div>a{
+        border:0;
+        padding: var(--gapMed);
+    }
+    /*----*/
+
+    /*--le logo du menu--*/
+    .principale>a:first-of-type{ 
+        top: var(--gapSml);
+        left: var(--gapSml);
+        width: 60px;
+    }
+    /*----*/
+
+    /*--l'élément déclencheur--*/
+    .principale input[type="checkbox"]{
+        display: block;
+    }
+    .principale input[type="checkbox"]:not(:checked)+nav{
+        display: none;
+    }
+    /*----*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+-----------------------------------
+.principale{
+    z-index: 2;
+    min-width: 100%;
+    background-color: var(--offWhite);
+}
+.principale > nav > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.principale nav a{
+    margin-top: 0;
+    font-weight: 700;
+    font-size: var(--fontbase);
+    line-height: var(--fontMed);
+    padding: var(--gapSml);
+}
+.principale nav a:hover{
+    color: var(--palest);
+    background-color: var(--darkest);
+    border-radius: var(--roundedXLrg);
+
+}
+.principale nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.principale > nav picture{    
+    margin-right: var(--gapMed);
+    max-width: 160px;
+
+}
+.principale > nav > picture> img{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.principale nav>a:last-of-type{ 
+    border-radius: var(--roundedFull);
+    padding: var(--gapMed);
+    font-size:  clamp(1.1rem, 1vw + 1.1rem, 1.641rem);
+    text-align: center;
+    margin-right: 30px;
+    background-color: var(--fluo);
+    color: var(--darkest);
+    line-height: 1.9rem;
+    max-height: fit-content;
+    max-width: 220px;
+    margin-left: var(--gapSml);
+
+}
+.principale nav>a:last-of-type:hover{
+    background-color:var(--darkest);
+    color: var(--fluo);
+}
+
+
+
+
+
+@media (max-width: 800px) {
+
+    .principale{
+        position: fixed;
+        width: 100%;
+        flex-flow: column;
+        align-items: end;
+        background-color: var(--darkest);
+        color: var(--palest);
+    }
+    .principale nav >picture{
+        margin: 0;
+        align-self: self-start;
+        padding: 0;
+        max-width: 10%;
+    }
+    .principale nav{
+        flex-flow: column;
+        align-items: center;
+    }
+    .principale nav div{
+        flex-flow: column;
+        align-items: end;
+    }
+    .principale nav a{
+        text-align: right;
+        padding: var(--gapMed);
+    }
+    .achat{
+        background-color: var(--fluo);
+        color: var(--darkest);
+    }
+    /*--menu-deroulant--*/
+/*     .principale nav>div:not(:hover) div{
+        opacity: 100%;
+    }
+    .principale nav>div>div{
+        position: static;
+    }
+    .principale nav>div>div>a{
+        border:0;
+        padding: var(--gapMed);
+    }
+    /*----*/
+
+    /*--le logo du menu--*/
+/*     .principale>a:first-of-type{ 
+        top: var(--gapSml);
+        left: var(--gapSml);
+        width: 60px;
+    }
+    
+
+    .principale input[type="checkbox"]{
+        display: block;
+    }
+    .principale input[type="checkbox"]:not(:checked)+nav{
+        display: none;
+    }
+    
+} */ 

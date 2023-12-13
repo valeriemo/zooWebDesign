@@ -1,0 +1,32 @@
+
+/* ASIDE PAGE ANIMAUX */
+.boite-filtrer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--gapLrg);
+    margin-top: 100px;
+    gap: var(--gapLrg);
+    border: 4px solid var(--medium);
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boite-filtrer > div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gapLrg);
+    justify-content: center;
+}
+.boite-filtrer a{
+    cursor: pointer;
+    font-weight: 400;
+}
+.boite-filtrer a:hover{
+    text-decoration: underline 3px var(--fluo);
+    text-underline-offset: 7px;
+
+
+}

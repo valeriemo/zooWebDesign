@@ -1,0 +1,94 @@
+body{
+    color: var(--darkest);
+    background-color: var(--offWhite);
+}
+header{
+    min-height: 75vh;
+}
+main>div{
+    padding: 0 3vw;  
+    margin-left: var(--margePrincipale);
+    margin-right: var(--margePrincipale);
+}
+section{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section>div{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+
+/* ESPACEMENT  */
+.marge-top-btm{         
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+main>div:nth-of-type(4)>section>div{
+    justify-content: space-around;
+    gap:var(--gapXLrg) clamp(20px, 4vw, 50px) ;
+}
+
+main>div:nth-of-type(4)>section div{
+    position: relative;
+}
+
+.background{
+    background-image: url("../../css/../img/background.jpg");
+    background-repeat: repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+
+/*--FOOTER--*/
+footer{
+    margin-top: var(--gapXLrg);
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    padding: var(--gapXLrg) 4vw;
+    gap: var(--gapXLrg);
+    background-color: var(--darkest);
+    color: var(--palest);
+}
+footer p{
+    font-size: var(--fontbase);
+
+}
+footer h1{
+    font-size: var(--fontMed);
+    text-decoration: underline 2px var(--fluo);
+    margin-bottom: var(--gapSml);
+    text-underline-offset: 7px;
+}
+footer>nav>a:first-of-type{
+    text-underline-offset: 7px;
+    text-decoration: underline 2px var(--fluo);
+}
+.secondaire > div >a:first-of-type {
+    text-decoration: underline 2px var(--fluo);
+    text-underline-offset: 7px;
+    margin-bottom: var(--gapSml);
+
+}
+footer img{
+    max-width: 25vmin;
+    margin-top: 60px;
+}
+
+
+/*-----MEDIA QUERIES-----*/  
+
+@media (max-width:800px) {
+
+    main>div:nth-of-type(4)>section>div{
+        flex-flow: column;
+        align-items: center;
+    }
+
+}

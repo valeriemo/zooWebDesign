@@ -1,0 +1,43 @@
+
+.carteLrg{
+    max-width: 1200px;
+    min-width: 320px;
+    background-color: var(--palest) ;
+    box-shadow: var(--box-shadow);
+}
+.carteLrg>img{
+    object-fit: cover;
+	width: 100%;
+
+    aspect-ratio: 16/9;
+}
+.carteLrg div{
+    padding: var(--gapLrg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gapMed);
+}
+.carteLrg .sous-titre{
+    text-align: left;
+    margin: 0;
+}
+.carteLrg > div > a{
+    margin-top: var(--gapLrg);
+}
+
+@media screen {
+    
+}
+/*
+commentaire == 
+    *1: le border-radius de l'image est déclaré comme tel pour le fit avec le border radius de la carte,
+    solution pas idéale.
+
+    *2: la hauteur de l'image est en "view width". solution pas idéale mais fonctionne bien, Accomode plusieurs ratios d'image
+    Attention de garder l'image en "object fit:cover" et de conserver un min-height et peut etre max-height.
+
+
+    -*autre: min et max witdh de la carte pourront être changé en fonction des images placées
+
+    
+*/

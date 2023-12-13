@@ -1,0 +1,31 @@
+
+.boite-medaillons{
+    display: flex;
+    flex-flow: column;
+    padding:var(--gapXLrg) 0;
+    text-align: center;
+    min-width: 300px;
+    background-color: var(--palest);
+    box-shadow: var(--box-shadow);
+    margin-top: var(--gapXLrg);
+}
+.boite-medaillons>div:first-of-type{
+    flex-direction: column;
+}
+.boite-medaillons>div:last-of-type{   /*sous boite pour medaillons*/
+    flex: 1;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    gap: var(--gapXLrg);
+    padding: 4vw;
+}
+.boite-medaillons a{ 
+    margin: 0 auto;
+}
+
+.boite-medaillons > div:first-of-type{
+    padding: var(--gapSml);
+    gap: 0;
+}
+

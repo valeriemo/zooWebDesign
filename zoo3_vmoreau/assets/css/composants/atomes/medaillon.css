@@ -1,0 +1,22 @@
+.medaillon{
+    flex: 200px;
+}
+.medaillon h3{
+    font-size: var(--fontMed);
+    margin-top: var(--gapMed);
+}
+.medaillon img{
+    max-height: 80vmin;         /* vmin */
+    max-width: 500px;
+    object-fit: cover;
+    aspect-ratio: 6/9;
+    border-radius: 200px 200px 0px 0px;
+    border: 4px solid var(--fluo);
+    object-position: center;
+
+}
+.medaillon img:hover{
+    border: 4px solid var(--dark);
+    filter: brightness(130%);
+}
+

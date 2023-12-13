@@ -1,0 +1,6 @@
+.boite-vedette{
+    display: flex;
+    flex-flow: wrap;
+    gap: var(--gapLrg);
+}
+

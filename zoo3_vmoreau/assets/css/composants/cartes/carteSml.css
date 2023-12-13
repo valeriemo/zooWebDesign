@@ -1,0 +1,71 @@
+.carteSml{
+    max-width: 400px;
+    min-width: 220px;
+    padding: var(--gapLrg);
+    background-color: var(--palest);
+    box-shadow: var(--box-shadow);
+}
+/*le titre avec bouton fleche*/
+.carteSml div>div{   
+    display: flex;
+    gap: var(--gapMed);
+    align-items: center;
+    justify-content: space-between;
+}
+/* Texte */
+.carteSml p{
+    font-size:var(--fontSml);
+    margin-top: var(--gapSml);
+    margin-bottom: var(--gapSml) ;
+}
+.carteSml img{
+    margin-top: var(--gapSml);
+	width: 100%;
+}
+/* Bouton */
+.carteSml a{
+    margin: auto 0;
+}
+
+
+
+/* VARIANTE Carte Vedette : page animaux */
+.carteSml.vedette{
+    background-color: var(--offWhite);
+    border-radius: 30px;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gapLrg);
+}
+/* Bouton */
+.carteSml.vedette a{
+    margin: 0;
+    margin-top: auto;
+}
+/* Texte */
+.carteSml.vedette p{
+    text-align: center;
+    min-height: 7em;
+
+}
+.carteSml.vedette img{
+    border-radius: 50%;
+    aspect-ratio: 5/5;
+    margin: 0;
+    outline: 4px solid var(--fluo);
+    object-fit: cover;
+}
+.carteSml.carteSml.vedette img:hover{
+    outline: 4px solid var(--dark);
+    filter: brightness(130%);
+}
+
+@media (max-width:800px) {
+
+    .carteSml.vedette p{
+        min-height: 0;
+    }
+
+}

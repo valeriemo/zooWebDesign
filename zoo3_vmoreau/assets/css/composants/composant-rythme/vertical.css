@@ -1,0 +1,36 @@
+/*--2EME SECTION DIVS VERTICAUX--*/
+
+.vertical:first-of-type{ 
+    flex: 3;
+    align-self: flex-start;
+    top: 0;
+}
+.vertical:first-of-type>*+*{ 
+    margin-top: var(--gapXLrg);
+}
+.vertical:last-of-type{ 
+    position: relative;
+    flex: 1;
+}
+.vertical:last-of-type>div{   
+    top: 0; 
+    margin-left: auto;
+}
+.vertical:last-of-type>div>*+*{           
+    margin-top: var(--gapXLrg);
+}
+.vertical .sous-titre{
+    text-align: left;
+}
+
+@media (min-width: 800px) {
+
+    .vertical:first-of-type {
+        position: sticky;
+}   
+    .vertical:last-of-type>div{
+        position: sticky;
+    }    
+}
+
+

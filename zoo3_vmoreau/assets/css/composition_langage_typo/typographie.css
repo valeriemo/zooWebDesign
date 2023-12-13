@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200;0,400;0,600;0,700;1,300&display=swap');
+
+
+html{
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+h1,h2,h3,h4{
+    line-height: 1.2;
+    min-width: 4ch;
+}
+h2{
+    padding-bottom: var(--gapMed);
+    font-size: var(--fontXLrg);
+    font-weight: 600;
+}
+h3{
+    font-size: var(--fontMed);
+}
+
+p{
+    min-width: 20ch;
+}
+h1{
+    font-size: clamp(30px, 3vw, 40px);
+    font-weight: 700;
+}
+
+.texte-fluo{
+    color: var(--fluo);
+}
+

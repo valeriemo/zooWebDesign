@@ -1,0 +1,42 @@
+:root{
+
+    /*GAPS*/
+    --gapXSml: 6.24px;
+    --gapSml: 11.24px;
+    --gapMed: 14.22px;
+    --gapLrg: 25.63px;
+    --gapXLrg: 51.96px;
+    --gapXXLrg: 105.33px;
+    
+    /*FONT SIZES*/
+
+    --fontSml: clamp(1.2rem, 0.9vw, 1.728rem);
+    --fontbase: clamp(1rem, 0.3vw + 0.8rem, 1.563rem);
+    --fontMed: clamp(1.3rem, 1.7vw, 1.953rem);
+    --fontLrg: clamp(1.6rem, 1vw + 1.3rem, 2.441rem);
+    --fontXLrg: clamp(1.8rem, 1.7vw + 2rem, 3.2rem);
+    --fontXXLrg: clamp(3.1rem, 3.5vw + 2.2rem, 5.96rem);
+
+    /*ROUNDED*/
+    --roundedFull: 10000px;
+    --roundedOval: 100%;
+    --roundedSml: 10px;
+    --roundedMed: 20px;
+    --roundedLrg: 30px;
+    --roundedXLrg: 60px;
+
+
+    /*PROTOTYPE COLORS*/
+    --offWhite: #fef9ea;
+    --palest: #CDE4C9;
+    --medium:#afae9f;
+    --kaki: #aaa95a;
+    --fluo:  #CEFF1A; 
+    --dark: #56766f;
+    --darkest:#1B2D2A;
+
+    --box-shadow: 8px 8px var(--dark);
+    --border:1.4px solid var(--darkest);
+
+    --margePrincipale : clamp(20px, 3vw, 50px);
+}

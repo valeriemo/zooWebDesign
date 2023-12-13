@@ -1,0 +1,112 @@
+.grille {
+    --width-colonne: 25ch; 
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--width-colonne),1fr));
+    gap: 50px; 
+}
+
+.contenant-grille {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--palest);
+    text-align: center;
+    gap: var(--gapLrg);
+}
+.contenant-grille span{
+    font-size: 30px;
+    margin-top: -30px;
+}
+.contenant-grille p{
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.4em;
+    max-width: 18ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenant-grille a{
+    margin-left: auto;
+    margin-top: auto;
+    border: 1.4px solid var(--darkest);
+    color:var(--darkest);
+    background-color: transparent;
+}
+.contenant-grille img{
+    max-width: var(--width-colonne);
+    height: auto;
+    aspect-ratio: 3.2/4;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: var(--roundedSml);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenant-grille h3{
+    flex-basis: 2.3em;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenant-grille:hover a{
+    color:var(--fluo);
+    background-color: var(--darkest);
+}
+.contenant-grille a:hover{
+    color:var(--darkest);
+    background-color: var(--fluo);
+}
+.contenant-grille:hover{
+    box-shadow: 8px 8px var(--dark);
+
+}
+
+/* /////////////// Page animal contenant fiche ///////////////  */
+
+.contenant-grille.fiche{
+    padding: 50px;
+    max-height: max-content;
+    min-width: 30ch;
+}
+
+.contenant-grille.fiche h3{
+    font-size: var(--fontLrg);
+}
+.contenant-grille.fiche h4{
+    font-size: clamp(1.2rem, 1.2vw, 1.953rem);
+    border-bottom: 4px solid var(--fluo);
+    padding-bottom: 10px;
+}
+.contenant-grille.fiche p{
+    max-width: 37ch;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2em;
+    margin-bottom: 40px;
+    font-style: normal;
+    font-size: clamp(1rem, 1.2vw, 2rem);
+}
+
+/* ///////////////  Grille img page animal /////////////// */
+
+.grille-img{
+    margin-top: 60px;
+    margin-left: var(--margePrincipale);
+    margin-right: var(--margePrincipale);
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch,1fr));
+    gap: 5px; 
+}
+.contenant-grille-img img{
+    object-fit: cover;
+    object-position: top left;
+    height: auto;
+    max-height: 400px;
+    cursor: pointer;
+}

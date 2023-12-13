@@ -1,0 +1,12 @@
+.ligneBasse{
+    margin: 0 var(--gapXLrg);  /*topBottom leftRight*/
+    border-bottom: var(--borderStd);
+    padding:0;
+}
+
+/*
+commentaire == Ce n'est pas une solution idéale je pense, mais elle reste facile et versatile. Sinon, devrais changer l'intégralité de l'ossature.(<--bonne idée, règlerais d'autres problèmes)
+    ""problème == les sections sont pleines largeur dans ce projet, 'border-bottom' prends la largeur complête de l'élément
+    solution == un composant div vide avec 'border-bottom' et une marge égale au contenu
+    ""
+*/

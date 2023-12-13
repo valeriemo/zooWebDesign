@@ -1,0 +1,47 @@
+.fin-de-page-hero{
+    position: relative;
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    justify-content: start;
+    align-items: center;
+    gap: var(--gapLrg);
+    padding: var(--gapXLrg);
+}
+.fin-de-page-hero>div{
+    margin-top : var(--gapXLrg);
+    margin-left: var(--gapLrg);
+    z-index: 1;
+}
+.fin-de-page-hero div>div+div{  /*3-les tickets*/
+    margin-top: var(--gapLrg);
+}
+.fin-de-page-hero img{
+    position: absolute;
+	object-fit: cover;
+	inset: 0;
+    height: 100%;   /* ou overflow hidden */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+}
+
+@media (max-width : 800px) {
+    .fin-de-page-hero{
+        justify-content: center;
+        aspect-ratio: 4/3;
+        margin: 0;
+    }
+    .fin-de-page-hero>div{
+        margin: 0;
+    }
+    .fin-de-page-hero div>div+div{  
+        margin-top: var(--gapXLrg);
+    }
+    .fin-de-page-hero img{
+        position: static;
+        padding-top: var(--gapLrg)
+    }
+    .fin-de-page-hero>div{   /*un peu whack, mais aide au conflit*/
+        z-index: 0;
+    }
+}

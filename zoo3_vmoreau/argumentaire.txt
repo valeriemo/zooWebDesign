@@ -1,0 +1,42 @@
+
+Les corrections du TP2 on été apportés au projets. Voir le dossier "coco". 
+
+
+Ce projet, pour etre remis à terme, représente le mvp "minimun viable product". 
+Il est très loin d'étre parfait et pourrais etre améliorer au niveau design, couleur et composant.
+
+Page animaux: cette page est le portail des animaux du zoo. 
+En ordre d'importance j'ai placé: 
+- l'entete-hero avec la phrase d'accroche du portail
+- Les animaux vedettes
+- La liste complete de tous les animaux
+- les boites promotionnels
+
+Page animal-cougar: cette page sera le profil de chaque animal 
+J'ai placé en ordre:
+- Un version semblable aux autres page ayant comme phrase d'accroche "Visitez nos cougar"
+- La section Les cougars du zoo, présentant un article propre au cougars mis en plan à ce moment. (anneta et jimmy)
+- La section portant sur les caractéristiques de l'animal.
+- une banniere d'événementielle
+- "Le saviez-vous" sur le cougar (J'ai eu de la misere avec l'adaptation du cercle...)
+- finalement la galerie d'images
+
+
+
+En général, je prend note de ces "nice to have" suivant :
+
+Le CSS à été réorganisé. J'aurais souhaité nettoyer le code et créer une nomenclature sémantique. 
+J'aurai souhaité une plus grande rigueur dans mes régles d'espacement (gap, margin, padding, espace entre les sections). 
+Puisque je n'ai pas réorganisé cela n'est le début, la tâche de réadaptation de ces règles devenait de plus en plus 
+grande. Ainsi, j'ai dû créer l'espacement du mieux que je pouvais a la mitaine (en calculant celui des autres pages etc).
+Je prends note qu'il faut avoir des régles clairements établis depuis le début du projet. 
+
+
+J'aurai souhaité plus d'effets de transitions pour egayer les pages. Des boites dynamiques etc. 
+J'aurai souhaité retravailler la navigation et le footer et ajouter des liens (icone) médias.
+J'aurai souhaité accompagné le site de ses propre icones personnalisés. 
+
+Page animal
+J'aurai souhaité rajouté en section hero un appel à l'action en bas de la page
+J'aurai souhaité une galerie d'images en carrousel pour afficher plus d'images sans prendre d'espace.
+

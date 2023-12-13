@@ -1,0 +1,28 @@
+.bouton{
+    max-width: max-content;
+    background-color: var(--darkest);
+    color: var(--fluo);
+    padding: var(--gapMed) var(--gapLrg); /*topBottom leftRight*/
+    border-radius: 100px;
+    transition-duration: 100ms;
+    font-size: clamp(14px, 2vw, 20px);
+    border: 1px solid transparent;
+    font-weight: 700;
+}
+.bouton:hover{
+    transition-duration: 100ms;
+    border-color: var(--fluo);
+    background-color: var(--fluo);
+    color: var(--darkest);
+}
+.bouton.fleche{
+    font-size: var(--fontMed);
+    padding: 0 15px;  /*topBottom leftRight---*/
+}
+.bouton.gros{
+    font-size: clamp(1.3rem, 1.5vw, 1.953rem);
+}
+.bouton.gros:hover{
+    color: var(--fluo);
+    background-color: var(--darkest);
+}

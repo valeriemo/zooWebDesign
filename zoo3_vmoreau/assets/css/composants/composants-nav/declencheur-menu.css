@@ -1,0 +1,21 @@
+.declencheur-menu{
+    text-align: end;
+    width: 100%;
+    appearance: none;
+    display: none;
+    font-size: var(--fontMed);
+    background-color: var(--darkest);
+    color: var(--palest);
+    padding: var(--gapSml);
+    cursor: pointer;
+}
+.declencheur-menu:hover{
+    background-color: var(--palest);
+    color: var(--darkest);
+}
+.declencheur-menu:not(:checked)::before {
+	content: "Ouvrir le menu";
+}
+.declencheur-menu:checked::before {
+	content: "Fermer le menu";
+}

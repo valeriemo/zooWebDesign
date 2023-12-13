@@ -1,0 +1,21 @@
+.titre-section{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding: var(--gapSml);
+    max-width: 40ch;
+    text-align: center;
+}
+
+/* Class de qui permet de résoudre le conflit avec le background img sur un titre (page animal) */
+
+.titre-section.back{
+    background-color: var(--offWhite);
+}
+
+@media (max-width:800px) {
+    .titre-section.margetop {
+        margin-bottom: 0;
+    }
+}

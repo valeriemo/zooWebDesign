@@ -1,0 +1,13 @@
+.haut-de-page{
+    z-index: 1;
+    margin-left: auto;
+    max-width: max-content;
+    position: sticky;  
+    right: 0;
+    top: 93%;
+}
+.haut-de-page a{
+    padding: 5px;
+    border-radius: var(--roundedSml);
+    font-size: 14px;
+}

@@ -1,0 +1,20 @@
+.horizon-article{
+    display: flex;
+    flex-direction: column;
+    border-left: 50px solid var(--dark);
+    padding-left: 10px;
+    background-color: var(--palest);
+    padding: 30px;
+}
+.horizon-article h3{
+    font-size: var(--fontXLrg);
+}
+.horizon-article p{
+    font-size: var(--fontSml);
+    margin-top: var(--gapMed);
+    margin-bottom: var(--gapXLrg);
+}
+.horizon-article span{
+    margin-bottom: var(--gapMed);
+    font-weight: 600;
+}

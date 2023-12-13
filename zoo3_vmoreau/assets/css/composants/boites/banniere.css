@@ -1,0 +1,33 @@
+/* Boite promotionnel en chevauchement en dessous de l'entete-hero principale */
+
+.banniere{
+    display: flex;
+    flex-flow: column;
+    padding: var(--gapXLrg);
+    background-color: var(--palest);
+    max-width: 50ch;
+    position: relative;
+    margin-bottom: var(--gapLrg);
+    box-shadow: var(--box-shadow);
+}
+.banniere.chevauchement{
+    margin-left: auto;
+    margin-top: -100px;
+    
+}
+.banniere.large{
+    max-width: 80ch;
+
+}
+.banniere p{
+    max-width: 60ch;
+}
+.banniere a{
+    margin-top: var(--gapXLrg);
+}
+@media (max-width: 800px) {
+    .banniere.chevauchement{
+        margin-top: var(--gapXLrg);
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thomas Aucoin-Lo">
+    <title>Fil de fer-Zoo de Val-Jalbert</title>
+    <link rel="stylesheet" href="./assets/css/master.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <div class="principale" aria-label="menu">
+        <input type="checkbox" class="declencheur-menu" aria-label="menu item">
+
+        <nav>
+            <a href="index.html" aria-label="nav-accueil">
+                <picture>
+                    <source media="(max-width:800px)" srcset="assets/icons/1x/logo-pale.png">         
+                    <img src="assets/icons/logo.png" alt="logo du site web-lien vers Accueil" title="Accueil">
+                </picture>
+            </a>
+
+            <div>
+                <a href="#">Le monde du Zoo forestier</a>
+                <a href="#">Activités et événements</a>
+                <div class="menu-deroulant">
+                    <a href="#">Préserver la faune sournoise</a>
+                    <div>
+                        <a href="#">Parrainez un animal</a>
+                        <a href="#">Notre programme éducatif</a>
+                        <a href="#">Nos initiatives de libération</a>
+                    </div>
+                </div>
+                <a href="#">Informations</a>
+            </div>
+
+            <a href="#" class="achat">Achetez vos billets</a>
+        </nav>
+    </div>
+    <!-- HEADER -->
+    <header class="entete-hero animaux">
+        <div class="hero-img">
+            <img src="assets/img/forest-walk.jpg" alt="un décor forestier enchanteur">
+        </div>
+        <div>
+            <h1 class="hero-text">Découvrez tous les animaux auxquels vous aurez accès en vous baladant dans notre <span class="texte-fluo">Zoo en forêt</span>.</h1>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <section>
+                <h2 class="titre-section variante">Animaux en vedettes !</h2>
+                <div class="boite-vedette">
+                    <article class="carteSml vedette">
+                        <a href="#"><img src="assets/img/pekan.jpg" alt="Anneta la cougar"></a>
+                        <h3>Le carcajou</h3>
+                        <p>Le glouton ou carcajou, est un mammifère au régime alimentaire omnivore à dominance carnivore.</p>
+                        <a href="#" class="bouton">Découvrez le carcajou</a>
+                    </article>
+                    <article class="carteSml vedette">
+                        <a href="#"><img src="assets/img/ours.jpg" alt="carcajou mangeant"></a>
+                        <h3>L'ours noir</h3>
+                        <p>L'Ours noir, aussi appelé baribal, est l'ours le plus commun en Amérique du Nord.</p>
+                        <a href="#" class="bouton">Découvrez l'ours noir</a>
+                    </article>
+                    <article class="carteSml vedette">
+                        <a href="#"><img src="assets/img/lynx-couple.jpg" alt="Club de danse de l'Ours"></a>
+                        <h3>Le Lynx</h3>
+                        <p>Les lynx sont aisément reconnaissables à leur face ornée de favoris.</p>
+                        <a href="page-animal.html" class="bouton">Découvrez le lynx</a>
+                    </article>
+                </div>
+            </section>
+
+            <aside class="boite-filtrer">
+                <h3>Filtrer par type d’animal</h3>
+                <div>
+                    <a href="#">Amphibien</a>
+                    <span>&#124;</span>
+                    <a href="#">Oiseau</a>
+                    <span>&#124;</span>
+                    <a href="#">Canin</a>
+                    <span>&#124;</span>
+                    <a href="#">Félin</a>
+                    <span>&#124;</span>
+                    <a href="#">Mustélidé</a>
+                </div>
+            </aside>
+
+            <section>
+                <div class="grille">
+                    <div class="contenant-grille">
+                        <h3>Harfang des neiges</h3>
+                        <img class="espace-bottom" src="assets/img/harfang.jpg" alt="Harfang des neiges">
+                        <p>&laquo; Gardien majestueux de l'hiver éternel &raquo;</p>
+                        <a class="bouton" href="#">Voir l’animal</a>
+                    </div>
+                    <div class="contenant-grille">
+                        <h3>Renard roux</h3>
+                        <img class="espace-bottom" src="assets/img/renard.jpg" alt="Renard roux">
+                        <p>&laquo; Symbole vivant de la beauté sauvage &raquo;</p>
+                        <a class="bouton" href="#">Voir l’animal</a>
+                    </div>
+                    <div class="contenant-grille">
+                        <h3>Hermine</h3>
+                        <img class="espace-bottom" src="assets/img/hermine.jpg" alt="Hermine">
+                        <p>&laquo; La reine de l'hiver &raquo;</p>
+                        <a class="bouton" href="#">Voir l’animal</a>
+                    </div>
+                    <div class="contenant-grille">
+                        <h3>Loutre de rivière</h3>
+                        <img class="espace-bottom"src="assets/img/loutre.jpg" alt="Loutre">
+                        <p>&laquo; Plongez dans un monde espiègle et aquatique &raquo;</p>
+                        <a class="bouton" href="#">Voir l’animal</a>
+                    </div>
+                    <div class="contenant-grille">
+                        <h3>Chouette rayée</h3>
+                        <img class="espace-bottom" src="assets/img/chouette.jpg" alt="image prototype">
+                        <p>&laquo; Gardienne mystérieuse des secrets nocturnes &raquo;</p>
+                        <a class="bouton" href="#">Voir l’animal</a>
+                    </div>
+                    <div class="contenant-grille">
+                        <h3>Cerf de Virginie</h3>
+                        <img class="espace-bottom" src="assets/img/cerf.jpg" alt="cerf de virginie">
+                        <p>&laquo; Dans les bois enchantés, le cerf de Virginie règne en seigneur majestueux &raquo;</p>
+                        <a class="bouton" href="#">Voir l’animal</a>
+                    </div>
+                    <div class="contenant-grille">
+                        <h3>Tortue peinte</h3>
+                        <img class="espace-bottom" src="assets/img/tortue.jpg" alt="tortue peintre">
+                        <p>&laquo; Les tortues, gardiennes immobiles du temps, nous enseignent la patience et la sagesse &raquo;</p>
+                        <a class="bouton" href="#">Voir l’animal</a>
+                    </div>
+                    <div class="contenant-grille">
+                        <h3>Lièvre d'Amérique</h3>
+                        <img class="espace-bottom" src="assets/img/lievre.jpg" alt="Lievre d'amérique">
+                        <p>&laquo; Incarne la vitesse de l'éclair et l'agilité délicate &raquo;</p>
+                        <a class="bouton" href="#">Voir l’animal</a>
+                    </div>
+                    <div class="contenant-grille">
+                        <h3>Porc-épic d'Amérique</h3>
+                        <img class="espace-bottom" src="assets/img/porcupine.jpg" alt="Porc-épic">
+                        <p>&laquo; Dans un manteau de piquants, le porc-épic dévoile sa nature défensive et unique &raquo;</p>
+                        <a class="bouton" href="#">Voir l’animal</a>
+                    </div>
+                    <div class="contenant-grille">
+                        <h3>Renard arctique</h3>
+                        <img class="espace-bottom" src="assets/img/renard-artique.jpg" alt="renard arctique">
+                        <p>&laquo; L'ambassadeur des terres glacées qui fascine et enchante &raquo;</p>
+                        <a class="bouton" href="#">Voir l’animal</a>
+                    </div>
+                    <div class="contenant-grille">
+                        <h3>Loup gris</h3>
+                        <img class="espace-bottom" src="assets/img/loup.jpg" alt="loup">
+                        <p>&laquo; Incarne la force sauvage et l'esprit indomptable de la nature &raquo;</p>
+                        <a class="bouton" href="#">Voir l’animal</a>
+                    </div>
+                    <div class="contenant-grille">
+                        <h3>Raton Laveur</h3>
+                        <img class="espace-bottom" src="assets/img/raton.jpg" alt="raton-laveur">
+                        <p>&laquo; Le raton laveur, ce bandit malicieux des bois, défie les limites de l'ingéniosité &raquo;</p>
+                        <a class="bouton" href="#">Voir l’animal</a>
+                    </div>
+                </div>
+            </section>
+
+            <article class="carteXLrg">
+                <img src="assets/img/cougar.jpg" alt="un cougar">
+                <div>
+                    <p>Parrainez un cougar</p>
+                    <p class="sous-titre">Chaque parrainage permet à un cougar de retouver sa liberté dans nos forêts québécoises.
+                    </p>
+                    <a href="#" class="bouton">Voir nos modèles de parrainage</a>
+                </div>
+            </article>
+
+            <article class="carteXLrg reverse">
+                <img src="assets/img/loutre_eau.jpg" alt="une image de loutre">
+                <div>
+                    <p>Séances de nourrissage </p>
+                    <strong>En semaine de 14h à 15h
+                    </strong>
+                    <p> Rejoignez-nous pour une rencontre palpitante avec ces adorables animaux, et apprenez-en davantage sur leur régime alimentaire et leur comportement naturel lors de cette séance de nourrissage des loutres.</p>
+                    <a href="#" class="bouton">Réservez votre place</a>
+                </div>
+            </article>
+            
+        </div>
+
+
+
+
+
+
+
+    </main>
+    <footer>    
+        <nav class="secondaire">
+            <a href="#">Services aux écoles</a>
+            <div>
+                <a href="#">Faire un Don</a>
+                <a href="#">Don unique</a>
+                <a href="#">Don mensuel</a>
+                <a href="#">Autres méthodes</a>
+            </div>
+            <div>
+                <a href="#">À propos</a>
+                <a href="#">Equipe</a>
+                <a href="#">Partenaires</a>
+                <a href="#">Carrières</a>
+            </div>
+        </nav>
+        <div>
+            <h1>Contact</h1>
+            <p>555 rue principale</p>
+            <p>(1-514) 555-5555</p>
+            <p>info@zoovaljalbert.qc.ca</p>
+            <img src="assets/icons/1x/logo-pale.png" alt="logo du site web-lien vers Accueil" title="Accueil">
+
+        </div>
+    </footer>

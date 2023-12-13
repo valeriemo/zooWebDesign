@@ -1,0 +1,75 @@
+.carteXLrg{
+    display: flex;
+    background-color: var(--medium) ;
+    margin-top: 80px;
+    gap: 10px;
+    margin-bottom: 80px;
+    color: var(--darkest);
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carteXLrg>img{
+    object-fit: cover;
+    min-width: 300px;
+}
+.carteXLrg div{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gapMed);
+    padding: var(--gapXLrg);
+}
+
+/* Titre */
+.carteXLrg div p:first-of-type{
+    font-size: clamp(1.6rem, 1vw + 1.3rem, 3.441rem);
+    font-weight: 800;
+}
+
+/* Texte */
+.carteXLrg div p:nth-of-type(2){
+    margin: 0;
+    max-width: clamp(10ch, 50vw, 50ch);
+    font-size: clamp(1rem, 0.5vw + 1rem, 2.441rem);
+    margin-top: var(--gapMed);
+    margin-bottom: var(--gapLrg);
+    min-width: 0;
+}
+
+/* Bouton */
+.carteXLrg div a{
+    margin-top: auto;
+    background-color: var(--fluo);
+    color: var(--darkest);
+}
+.carteXLrg a:hover{
+    background-color: var(--darkest);
+    color: var(--fluo);
+    border: 1px solid transparent;
+}
+
+/* date */
+.carteXLrg strong{
+    font-size: 20px;
+}
+
+.carteXLrg.reverse{
+    flex-direction: row-reverse;
+    max-height: 700px;
+}
+.carteXLrg.reverse strong{
+    text-align: left;
+}
+.carteXLrg.reverse p{
+    font-size: var(--fontMed);
+}
+@media (max-width: 800px) {
+    .carteXLrg{
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    .carteXLrg div{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

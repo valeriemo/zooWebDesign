@@ -1,0 +1,154 @@
+
+.entete-hero{
+    display: flex;
+    flex-flow:row-reverse;
+    overflow: hidden;
+    min-height: 70vh;
+    margin-left: var(--margePrincipale);    /* PKOI LES MARGES DE MARCHE PAS */
+    margin-top: var(--margePrincipale);
+}
+
+.entete-hero h1{
+    font-size: clamp(50px, 6vw, 100px);
+    padding: 30px;
+}
+.entete-hero>div:last-of-type{
+    margin: auto clamp(20px, 5vw, 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 55%;
+    flex-shrink: 1;
+    max-width: 700px;
+    margin-right: -200px;
+    background-color: var(--darkest);
+    color: var(--palest);
+    padding: 40px;
+    z-index: 2;
+}
+
+.hero-text{
+    font-size: clamp(50px, 6vw, 100px);
+    max-width: fit-content;
+    text-align: right;
+    margin-bottom: 15px;
+    line-height: clamp(7rem, 10vw, rem);
+}
+
+.hero-img{
+    flex: 80%;
+}
+
+.entete-hero p{
+    display: inline;
+    font-size: clamp(20px, 2vw, 30px);
+    color: var(--palest);
+    text-align: right;
+    margin-left: auto;
+    max-width: 300px;
+}
+
+.hero-img img{
+    z-index: -1;
+	object-fit: cover;
+	inset: 0;
+	width: 80%;
+}
+.entete-hero a{  
+    margin-top: 60px;
+    margin-left: auto;
+    background-color: var(--fluo);
+    color: var(--darkest);
+}
+
+/*////////////////// Page-animaux //////////////////*/
+
+.entete-hero.animaux{
+    margin: var(--margePrincipale);
+}
+.entete-hero.animaux img{
+    width: 100%;
+}
+.entete-hero.animaux div:first-of-type{
+    margin-right: 5vw;
+}
+.entete-hero.animaux div:last-of-type{
+    margin-top: 60px;
+    background-color: var(--medium);
+}
+.entete-hero.entete-hero.animaux h1{
+    color: var(--darkest);
+    font-size: clamp(43px, 3vw, 100px);
+}
+
+
+/*////////////////// Page-animal //////////////////*/
+.entete-hero.animal{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+}
+.entete-hero.animal img{
+    margin-left: -150px;
+    width: 80%;
+}
+.entete-hero.animal div:last-of-type{
+    margin-right:0;
+    margin-left: 220px;
+    background-color: var(--darkest);
+    color: var(--palest);
+}
+
+/*
+commentaires == 
+    -le .bouton.fleche 'margin-top' doit être redéfini ici car il est à auto de base(<--problème/voir bouton.css).
+*/
+
+@media (max-width: 800px) {
+
+    .entete-hero>div:last-of-type{
+        z-index: 0;
+        margin: 0;
+        max-width: 100%;
+    }
+    .hero-img div{
+        margin: 0;
+    }
+    .hero-img img{
+        width: 100%;
+        max-height: 50vh;
+        display: block;   /* enleve le line height */
+        margin: 0;
+    }
+    .entete-hero{
+        margin: 0;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    /* Page animaux */
+    .entete-hero.animaux{
+        margin: 0;
+        margin-bottom: 60px;
+    }
+    .entete-hero.animaux div:first-of-type{
+        margin: 0;
+    }
+    .entete-hero.animaux div:last-of-type{
+        margin: 0;
+    }
+    /* Page Animal */
+    .entete-hero.animal div:first-of-type{
+        margin: 0;
+        max-width: 100%;
+    }
+    .entete-hero.animal div:last-of-type{
+        margin: 0;
+    }
+    .entete-hero.animal img {
+        margin: 0;
+        max-height: 80vh;
+        width: 100%;
+    }
+
+
+}
